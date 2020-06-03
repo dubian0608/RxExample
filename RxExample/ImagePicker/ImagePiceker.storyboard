@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yN6-Nu-yXR">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ImagePicker-->
+        <scene sceneID="D4Y-Vu-cm3">
+            <objects>
+                <viewController id="yN6-Nu-yXR" customClass="ImagePickerController" customModule="RxExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zwl-2d-pD8"/>
+                        <viewControllerLayoutGuide type="bottom" id="1TP-FI-bqA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mte-Dk-8gk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KN2-Bw-zGc">
+                                <rect key="frame" x="20" y="20" width="374" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="VFT-MF-HPm"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsR-hl-aSn">
+                                <rect key="frame" x="180" y="286" width="54" height="30"/>
+                                <state key="normal" title="Camera"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0I-ZG-eEr">
+                                <rect key="frame" x="183" y="333" width="48" height="30"/>
+                                <state key="normal" title="Gallery"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b35-aL-Tma">
+                                <rect key="frame" x="190" y="379" width="34" height="30"/>
+                                <state key="normal" title="Crop"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KN2-Bw-zGc" firstAttribute="leading" secondItem="Mte-Dk-8gk" secondAttribute="leading" constant="20" id="0gA-Gq-HiO"/>
+                            <constraint firstItem="b35-aL-Tma" firstAttribute="top" secondItem="L0I-ZG-eEr" secondAttribute="bottom" constant="16" id="CJb-Vi-eG9"/>
+                            <constraint firstItem="b35-aL-Tma" firstAttribute="centerX" secondItem="L0I-ZG-eEr" secondAttribute="centerX" id="IK5-yG-cMO"/>
+                            <constraint firstItem="L0I-ZG-eEr" firstAttribute="top" secondItem="rsR-hl-aSn" secondAttribute="bottom" constant="17" id="Y9F-fT-5Ni"/>
+                            <constraint firstItem="KN2-Bw-zGc" firstAttribute="top" secondItem="zwl-2d-pD8" secondAttribute="bottom" constant="20" id="cdi-RJ-KXJ"/>
+                            <constraint firstItem="L0I-ZG-eEr" firstAttribute="centerX" secondItem="rsR-hl-aSn" secondAttribute="centerX" id="ctr-t8-fSJ"/>
+                            <constraint firstItem="rsR-hl-aSn" firstAttribute="top" secondItem="KN2-Bw-zGc" secondAttribute="bottom" constant="16" id="fSx-r6-gQJ"/>
+                            <constraint firstItem="rsR-hl-aSn" firstAttribute="centerX" secondItem="KN2-Bw-zGc" secondAttribute="centerX" id="gZn-7m-qLh"/>
+                            <constraint firstAttribute="trailing" secondItem="KN2-Bw-zGc" secondAttribute="trailing" constant="20" id="jL5-d8-UmD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ulk-8W-qF4"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ImagePicker" id="LJy-eS-NvF"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="cameraButton" destination="rsR-hl-aSn" id="Fmk-hw-oVw"/>
+                        <outlet property="cropButton" destination="b35-aL-Tma" id="Df7-5f-KQu"/>
+                        <outlet property="galleryButton" destination="L0I-ZG-eEr" id="ASg-sq-fa5"/>
+                        <outlet property="imageView" destination="KN2-Bw-zGc" id="DNR-ii-0jC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yff-Ij-1OL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="255" y="143"/>
+        </scene>
+    </scenes>
+</document>

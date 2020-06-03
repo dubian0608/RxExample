@@ -3,29 +3,73 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F4D915F245ED1540076190B /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4D915E245ED1540076190B /* MainTableViewController.swift */; };
 		0F51336B2455AC7B006022DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F51336A2455AC7B006022DB /* AppDelegate.swift */; };
 		0F51336D2455AC7B006022DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F51336C2455AC7B006022DB /* SceneDelegate.swift */; };
-		0F51336F2455AC7B006022DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F51336E2455AC7B006022DB /* ViewController.swift */; };
 		0F5133722455AC7B006022DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F5133702455AC7B006022DB /* Main.storyboard */; };
 		0F5133752455AC7B006022DB /* RxExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0F5133732455AC7B006022DB /* RxExample.xcdatamodeld */; };
 		0F5133772455AC7D006022DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F5133762455AC7D006022DB /* Assets.xcassets */; };
 		0F51337A2455AC7D006022DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F5133782455AC7D006022DB /* LaunchScreen.storyboard */; };
+		0F5133832455AD72006022DB /* ImagePiceker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F5133822455AD72006022DB /* ImagePiceker.storyboard */; };
+		0F5847FF248791C300B81530 /* UIImagePickerController+RxCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5847FE248791C300B81530 /* UIImagePickerController+RxCreate.swift */; };
+		0F5848052487921B00B81530 /* CLLocationManager+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5848012487921B00B81530 /* CLLocationManager+Rx.swift */; };
+		0F5848062487921B00B81530 /* UIImagePickerController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5848022487921B00B81530 /* UIImagePickerController+Rx.swift */; };
+		0F5848072487921B00B81530 /* RxImagePickerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5848032487921B00B81530 /* RxImagePickerDelegateProxy.swift */; };
+		0F5848082487921B00B81530 /* RxCLLocationManagerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5848042487921B00B81530 /* RxCLLocationManagerDelegateProxy.swift */; };
+		0F58480B2487A44200B81530 /* SimpleTableViewExampleSectioned.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F58480A2487A44200B81530 /* SimpleTableViewExampleSectioned.storyboard */; };
+		0F58480D2487A4BE00B81530 /* SimpleTableViewExampleSectionedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F58480C2487A4BE00B81530 /* SimpleTableViewExampleSectionedController.swift */; };
+		0FA439A324873D200004104D /* SIgnDriverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA4399624873D1F0004104D /* SIgnDriverViewController.swift */; };
+		0FA439A424873D200004104D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA4399724873D1F0004104D /* HomeViewController.swift */; };
+		0FA439A524873D200004104D /* SIgnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA4399824873D1F0004104D /* SIgnViewController.swift */; };
+		0FA439A624873D200004104D /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA4399924873D200004104D /* ActivityIndicator.swift */; };
+		0FA439A724873D200004104D /* GithubSIgnupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA4399B24873D200004104D /* GithubSIgnupViewModel.swift */; };
+		0FA439A824873D200004104D /* GithubSignupDriverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA4399C24873D200004104D /* GithubSignupDriverViewModel.swift */; };
+		0FA439A924873D200004104D /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA4399E24873D200004104D /* Protocol.swift */; };
+		0FA439AA24873D200004104D /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA4399F24873D200004104D /* Wireframe.swift */; };
+		0FA439AB24873D200004104D /* BindingExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA439A024873D200004104D /* BindingExtensions.swift */; };
+		0FA439AC24873D200004104D /* GitHubDefaultValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA439A124873D200004104D /* GitHubDefaultValidationService.swift */; };
+		0FA439B024873FEB0004104D /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA439AF24873FEB0004104D /* ImagePickerController.swift */; };
+		0FB2AB22248672A300226495 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FB2AB21248672A300226495 /* Signup.storyboard */; };
+		8C74BDB4CDEF195FBCCB0443 /* Pods_RxExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7F5E40CAA4CB4820299872 /* Pods_RxExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F4D915E245ED1540076190B /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		0F5133672455AC7B006022DB /* RxExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F51336A2455AC7B006022DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F51336C2455AC7B006022DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0F51336E2455AC7B006022DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0F5133712455AC7B006022DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0F5133742455AC7B006022DB /* RxExample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RxExample.xcdatamodel; sourceTree = "<group>"; };
 		0F5133762455AC7D006022DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F5133792455AC7D006022DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F51337B2455AC7D006022DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F5133822455AD72006022DB /* ImagePiceker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImagePiceker.storyboard; sourceTree = "<group>"; };
+		0F5847FE248791C300B81530 /* UIImagePickerController+RxCreate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+RxCreate.swift"; sourceTree = "<group>"; };
+		0F5848012487921B00B81530 /* CLLocationManager+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocationManager+Rx.swift"; sourceTree = "<group>"; };
+		0F5848022487921B00B81530 /* UIImagePickerController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+Rx.swift"; sourceTree = "<group>"; };
+		0F5848032487921B00B81530 /* RxImagePickerDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxImagePickerDelegateProxy.swift; sourceTree = "<group>"; };
+		0F5848042487921B00B81530 /* RxCLLocationManagerDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxCLLocationManagerDelegateProxy.swift; sourceTree = "<group>"; };
+		0F58480A2487A44200B81530 /* SimpleTableViewExampleSectioned.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SimpleTableViewExampleSectioned.storyboard; sourceTree = "<group>"; };
+		0F58480C2487A4BE00B81530 /* SimpleTableViewExampleSectionedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableViewExampleSectionedController.swift; sourceTree = "<group>"; };
+		0FA4399624873D1F0004104D /* SIgnDriverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIgnDriverViewController.swift; sourceTree = "<group>"; };
+		0FA4399724873D1F0004104D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0FA4399824873D1F0004104D /* SIgnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIgnViewController.swift; sourceTree = "<group>"; };
+		0FA4399924873D200004104D /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		0FA4399B24873D200004104D /* GithubSIgnupViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubSIgnupViewModel.swift; sourceTree = "<group>"; };
+		0FA4399C24873D200004104D /* GithubSignupDriverViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubSignupDriverViewModel.swift; sourceTree = "<group>"; };
+		0FA4399E24873D200004104D /* Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		0FA4399F24873D200004104D /* Wireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
+		0FA439A024873D200004104D /* BindingExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindingExtensions.swift; sourceTree = "<group>"; };
+		0FA439A124873D200004104D /* GitHubDefaultValidationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubDefaultValidationService.swift; sourceTree = "<group>"; };
+		0FA439AF24873FEB0004104D /* ImagePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerController.swift; sourceTree = "<group>"; };
+		0FB2AB21248672A300226495 /* Signup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
+		27126482F2EA8B69E521CF56 /* Pods-RxExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxExample.release.xcconfig"; path = "Target Support Files/Pods-RxExample/Pods-RxExample.release.xcconfig"; sourceTree = "<group>"; };
+		D6174238F4528D6FC823F054 /* Pods-RxExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxExample.debug.xcconfig"; path = "Target Support Files/Pods-RxExample/Pods-RxExample.debug.xcconfig"; sourceTree = "<group>"; };
+		EC7F5E40CAA4CB4820299872 /* Pods_RxExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +77,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C74BDB4CDEF195FBCCB0443 /* Pods_RxExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07AE98785113348F864EA13D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6174238F4528D6FC823F054 /* Pods-RxExample.debug.xcconfig */,
+				27126482F2EA8B69E521CF56 /* Pods-RxExample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		0F51335E2455AC7B006022DB = {
 			isa = PBXGroup;
 			children = (
 				0F5133692455AC7B006022DB /* RxExample */,
 				0F5133682455AC7B006022DB /* Products */,
+				07AE98785113348F864EA13D /* Pods */,
+				8F545AE4431F704B9641CFE3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,9 +114,14 @@
 		0F5133692455AC7B006022DB /* RxExample */ = {
 			isa = PBXGroup;
 			children = (
+				0FA4399724873D1F0004104D /* HomeViewController.swift */,
+				0F5848002487921B00B81530 /* Extensions */,
+				0FA439AD24873E6F0004104D /* Signup */,
+				0F5133812455AD50006022DB /* ImagePicker */,
+				0F5848092487A42600B81530 /* SimpleTableViewExampleSectioned */,
 				0F51336A2455AC7B006022DB /* AppDelegate.swift */,
 				0F51336C2455AC7B006022DB /* SceneDelegate.swift */,
-				0F51336E2455AC7B006022DB /* ViewController.swift */,
+				0F4D915E245ED1540076190B /* MainTableViewController.swift */,
 				0F5133702455AC7B006022DB /* Main.storyboard */,
 				0F5133762455AC7D006022DB /* Assets.xcassets */,
 				0F5133782455AC7D006022DB /* LaunchScreen.storyboard */,
@@ -70,6 +131,85 @@
 			path = RxExample;
 			sourceTree = "<group>";
 		};
+		0F5133812455AD50006022DB /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				0F5133822455AD72006022DB /* ImagePiceker.storyboard */,
+				0FA439AF24873FEB0004104D /* ImagePickerController.swift */,
+				0F5847FE248791C300B81530 /* UIImagePickerController+RxCreate.swift */,
+			);
+			path = ImagePicker;
+			sourceTree = "<group>";
+		};
+		0F5848002487921B00B81530 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0F5848012487921B00B81530 /* CLLocationManager+Rx.swift */,
+				0F5848022487921B00B81530 /* UIImagePickerController+Rx.swift */,
+				0F5848032487921B00B81530 /* RxImagePickerDelegateProxy.swift */,
+				0F5848042487921B00B81530 /* RxCLLocationManagerDelegateProxy.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0F5848092487A42600B81530 /* SimpleTableViewExampleSectioned */ = {
+			isa = PBXGroup;
+			children = (
+				0F58480A2487A44200B81530 /* SimpleTableViewExampleSectioned.storyboard */,
+				0F58480C2487A4BE00B81530 /* SimpleTableViewExampleSectionedController.swift */,
+			);
+			path = SimpleTableViewExampleSectioned;
+			sourceTree = "<group>";
+		};
+		0FA4399424873D1F0004104D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0FA4399624873D1F0004104D /* SIgnDriverViewController.swift */,
+				0FA4399824873D1F0004104D /* SIgnViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0FA4399A24873D200004104D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0FA4399B24873D200004104D /* GithubSIgnupViewModel.swift */,
+				0FA4399C24873D200004104D /* GithubSignupDriverViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0FA4399D24873D200004104D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0FA4399E24873D200004104D /* Protocol.swift */,
+				0FA4399F24873D200004104D /* Wireframe.swift */,
+				0FA439A024873D200004104D /* BindingExtensions.swift */,
+				0FA439A124873D200004104D /* GitHubDefaultValidationService.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0FA439AD24873E6F0004104D /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				0FA4399424873D1F0004104D /* Controller */,
+				0FA4399D24873D200004104D /* Model */,
+				0FA4399A24873D200004104D /* ViewModel */,
+				0FB2AB21248672A300226495 /* Signup.storyboard */,
+				0FA4399924873D200004104D /* ActivityIndicator.swift */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		8F545AE4431F704B9641CFE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC7F5E40CAA4CB4820299872 /* Pods_RxExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +217,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0F51337E2455AC7D006022DB /* Build configuration list for PBXNativeTarget "RxExample" */;
 			buildPhases = (
+				05320DF29AC80E592DEBA5FC /* [CP] Check Pods Manifest.lock */,
 				0F5133632455AC7B006022DB /* Sources */,
 				0F5133642455AC7B006022DB /* Frameworks */,
 				0F5133652455AC7B006022DB /* Resources */,
+				D38D4DCA5D0E2F5FA3E90038 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,22 +270,84 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F58480B2487A44200B81530 /* SimpleTableViewExampleSectioned.storyboard in Resources */,
+				0F5133832455AD72006022DB /* ImagePiceker.storyboard in Resources */,
 				0F51337A2455AC7D006022DB /* LaunchScreen.storyboard in Resources */,
 				0F5133772455AC7D006022DB /* Assets.xcassets in Resources */,
+				0FB2AB22248672A300226495 /* Signup.storyboard in Resources */,
 				0F5133722455AC7B006022DB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		05320DF29AC80E592DEBA5FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D38D4DCA5D0E2F5FA3E90038 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxExample/Pods-RxExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxExample/Pods-RxExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxExample/Pods-RxExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0F5133632455AC7B006022DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F5848052487921B00B81530 /* CLLocationManager+Rx.swift in Sources */,
 				0F5133752455AC7B006022DB /* RxExample.xcdatamodeld in Sources */,
-				0F51336F2455AC7B006022DB /* ViewController.swift in Sources */,
+				0FA439A924873D200004104D /* Protocol.swift in Sources */,
+				0F58480D2487A4BE00B81530 /* SimpleTableViewExampleSectionedController.swift in Sources */,
+				0F5848082487921B00B81530 /* RxCLLocationManagerDelegateProxy.swift in Sources */,
+				0FA439A524873D200004104D /* SIgnViewController.swift in Sources */,
+				0FA439AA24873D200004104D /* Wireframe.swift in Sources */,
 				0F51336B2455AC7B006022DB /* AppDelegate.swift in Sources */,
+				0F5848062487921B00B81530 /* UIImagePickerController+Rx.swift in Sources */,
+				0FA439A624873D200004104D /* ActivityIndicator.swift in Sources */,
+				0FA439AC24873D200004104D /* GitHubDefaultValidationService.swift in Sources */,
+				0FA439B024873FEB0004104D /* ImagePickerController.swift in Sources */,
+				0FA439A824873D200004104D /* GithubSignupDriverViewModel.swift in Sources */,
+				0FA439A724873D200004104D /* GithubSIgnupViewModel.swift in Sources */,
+				0FA439A424873D200004104D /* HomeViewController.swift in Sources */,
+				0FA439A324873D200004104D /* SIgnDriverViewController.swift in Sources */,
+				0FA439AB24873D200004104D /* BindingExtensions.swift in Sources */,
+				0F5847FF248791C300B81530 /* UIImagePickerController+RxCreate.swift in Sources */,
+				0F4D915F245ED1540076190B /* MainTableViewController.swift in Sources */,
+				0F5848072487921B00B81530 /* RxImagePickerDelegateProxy.swift in Sources */,
 				0F51336D2455AC7B006022DB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +490,7 @@
 		};
 		0F51337F2455AC7D006022DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6174238F4528D6FC823F054 /* Pods-RxExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +509,7 @@
 		};
 		0F5133802455AC7D006022DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27126482F2EA8B69E521CF56 /* Pods-RxExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
